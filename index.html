@@ -53,53 +53,7 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous</a><sup>*</sup>,</span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
+                <a href="" target="_blank">Anonymous Authors</a></span>
               </span>
             </div>
           </div>
@@ -109,23 +63,6 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -145,127 +82,168 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+<!-- Music demo -->
+<style>
+  th {
+    font-size: 1.3rem;
+  }
+  .table td {
+    vertical-align: middle;
+    font-size: 1.3rem;
+  }
+</style>
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- Inpainting -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Demo Music - Inpainting</h2>
+    <table class="has-text-centered table is-bordered is-fullwidth">
+      <thead>
+        <tr>
+          <th class="has-text-centered">Method</th>
+          <th class="has-text-centered">Mel-Spectrogram</th>
+          <th class="has-text-centered">Music</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Degraded Music</td>
+          <td><img src="static/music/inpainting/degraded_music.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/inpainting/degraded_music.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>Ground Truth</td>
+          <td><img src="static/music/inpainting/gt.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/inpainting/gt.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>DPS</td>
+          <td><img src="static/music/inpainting/dps.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/inpainting/dps.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>MPGD</td>
+          <td><img src="static/music/inpainting/mpgd.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/inpainting/mpgd.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>DITTO</td>
+          <td><img src="static/music/inpainting/ditto.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/inpainting/ditto.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>DiffMR</td>
+          <td><img src="static/music/inpainting/diffmr.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/inpainting/diffmr.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
-<!-- End youtube video -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
+<!-- Super-resolution -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Demo Music - Super-resolution</h2>
+    <table class="has-text-centered table is-bordered is-fullwidth">
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>Mel-Spectrogram</th>
+          <th>Music</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Degraded Music</td>
+          <td><img src="static/music/super_resolution/degraded_music.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/super_resolution/degraded_music.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>Ground Truth</td>
+          <td><img src="static/music/super_resolution/gt.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/super_resolution/gt.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>DPS</td>
+          <td><img src="static/music/super_resolution/dps.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/super_resolution/dps.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>MPGD</td>
+          <td><img src="static/music/super_resolution/mpgd.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/super_resolution/mpgd.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>DITTO</td>
+          <td><img src="static/music/super_resolution/ditto.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/super_resolution/ditto.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>DiffMR</td>
+          <td><img src="static/music/super_resolution/diffmr.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/super_resolution/diffmr.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
-<!-- End video carousel -->
 
 
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
+<!-- Phase Retrieval -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Demo Music - Phase Retrieval</h2>
+    <table class="has-text-centered table is-bordered is-fullwidth">
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>Mel-Spectrogram</th>
+          <th>Music</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ground Truth</td>
+          <td><img src="static/music/phase_retrieval/gt.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/phase_retrieval/gt.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>DPS</td>
+          <td><img src="static/music/phase_retrieval/dps.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/phase_retrieval/dps.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>MPGD</td>
+          <td><img src="static/music/phase_retrieval/mpgd.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/phase_retrieval/mpgd.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>DITTO</td>
+          <td><img src="static/music/phase_retrieval/ditto.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/phase_retrieval/ditto.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td>DiffMR</td>
+          <td><img src="static/music/phase_retrieval/diffmr.png" style="max-width: 50%; height: auto;"></td>
+          <td><audio controls><source src="static/music/phase_retrieval/diffmr.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<!-- End music demo -->
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{diffmr,
+  title  = {DiffMR: Training-Free Diffusion Spherical Linear Interpolation Guidance for Music Restoration},
+  author = {Anonymous Authors},
+  year   = {2025},
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
