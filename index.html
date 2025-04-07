@@ -267,6 +267,18 @@
   </div>
 </footer>
 
+<script>
+    function pauseOthers(currentAudio) {
+        const audios = document.getElementsByTagName('audio');
+        for (let audio of audios) {
+            if (audio !== currentAudio) {
+                audio.pause();
+                // audio.currentTime = 0;
+            }
+        }
+    }
+</script>
+
 <!-- Statcounter tracking code -->
   
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
