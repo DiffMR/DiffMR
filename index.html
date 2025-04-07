@@ -273,7 +273,7 @@
         for (let audio of audios) {
             if (audio !== currentAudio) {
                 audio.pause();
-                // audio.currentTime = 0;
+                audio.currentTime = 0;
             }
         }
     }
